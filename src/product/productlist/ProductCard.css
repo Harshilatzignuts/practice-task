@@ -1,0 +1,32 @@
+.product_card {
+    padding: 20px !important;
+    position: relative;
+    background-color: azure !important;
+}
+.group_button{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.product_card span {
+    font-weight: 500;
+    margin: 10px 0;
+}
+.no_data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+}
+.value, .desc{
+    font-weight: 400;
+}
+.product_list {
+    height: calc(100vh - 145px);
+    overflow-y: auto;
+}
+

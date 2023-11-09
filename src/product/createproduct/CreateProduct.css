@@ -1,0 +1,80 @@
+
+.varient-card{
+    
+    padding: 20px;
+}
+label {
+    font-weight: bold;
+  }
+  
+  /* Form input fields */
+  .form-control {
+    width: 99%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+  }
+  
+  /* Error messages */
+  .error {
+    color: #ff0000;
+    font-size: 14px;
+  }
+  
+  /* Vendor and Variant sections */
+  .vendor-section,
+  .variant-section {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add and Remove buttons */
+  .add-button,
+  .remove-button {
+    margin: 5px 0 !important;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .text-right{
+    text-align: right;
+  }
+  .add-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .remove-button:hover {
+    background-color: #e50914;
+  }
+  
+  /* Submit button */
+  .submit-button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  .form-group {
+    margin-bottom: 20px;
+}
+.create-product {
+  display: block;
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
+}
