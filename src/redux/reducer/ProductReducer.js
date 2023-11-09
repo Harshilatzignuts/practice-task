@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const initialState = {
   products: JSON.parse(localStorage.getItem("products")) || [],
-  editingProductId: null,
+  editingProductId: localStorage.getItem("editingProductId") || "",
 };
 
 const productReducer = (state = initialState, action) => {
@@ -53,11 +53,11 @@ const productReducer = (state = initialState, action) => {
 
       // Update local storage
       localStorage.setItem("products", JSON.stringify(updatedProducts));
+      localStorage.setItem("editingProductId", action.payload);
 
       return {
         ...state,
         products: updatedProducts,
-        editingProductId: action.payload,
       };
 
     default:

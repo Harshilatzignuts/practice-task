@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "@mui/material/Card";
 import { Formik, Form, FieldArray } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { editProduct } from "../../redux/action/ProductAction";
+import { editProduct, setProducts } from "../../redux/action/ProductAction";
 import "../createproduct/CreateProduct.css";
 import {
   Button,
@@ -22,7 +22,8 @@ const EditProduct = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate(); // Access the navigate function
   const allProduct = useSelector((state) => state.products.products);
-  const productId = useSelector((state) => state.products.editingProductId);
+  const productId = localStorage.getItem("editingProductId");
+  //const [product, setProduct] = React.useState();
 
   const product = useSelector((state) =>
     state.products.products.find((product) => product.id === productId)
