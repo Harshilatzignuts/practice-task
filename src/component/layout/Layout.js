@@ -8,7 +8,9 @@ function Layout({ children }) {
       <Sidebar />
       <div className="content">
         <Header />
-        <div className="main">{children}</div>
+        <div className="main" id="Main">
+          {children}
+        </div>
       </div>
     </div>
   );

@@ -58,6 +58,7 @@ const productReducer = (state = initialState, action) => {
       return {
         ...state,
         products: updatedProducts,
+        editingProductId: action.payload,
       };
 
     default:

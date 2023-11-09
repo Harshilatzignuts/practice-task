@@ -30,3 +30,8 @@
     overflow-y: auto;
 }
 
+.ReactModal__Content.ReactModal__Content--after-open {
+    width: calc(100% - 380px);
+    max-height: 200px;
+    margin-left: auto;
+}
