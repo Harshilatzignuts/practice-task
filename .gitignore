@@ -1,0 +1,78 @@
+## IDE ##
+.idea/
+.vscode/
+
+## Django/Python ##
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
+*.py[cod]
+*.bak
+
+## Celery ##
+celerybeat-schedule
+
+## Log ##
+*.log
+
+## Cert ##
+new.cert
+
+## Uploads ##
+uploaded_files/
+uploads/
+
+## Dependencies ##
+node_modules/
+
+## Virtual Environment ##
+infraondns_env/
+infraon_venv/
+venv/
+env/
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# profiling files
+chrome-profiler-events.json
+speed-measure-plugin.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+/*.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+yarn.lock
+package-lock.json
+
+# System Files
+.DS_Store
+Thumbs.db
+release/
